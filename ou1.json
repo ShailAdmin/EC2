@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  SubOU1:
+    Type: 'AWS::Organizations::OrganizationalUnit'
+    Properties:
+      ParentId: !Ref RootOU
+      Name: SubOU1
+
+  SubOU2:
+    Type: 'AWS::Organizations::OrganizationalUnit'
+    Properties:
+      ParentId: !Ref RootOU
+      Name: SubOU2
+
+  SubOU3:
+    Type: 'AWS::Organizations::OrganizationalUnit'
+    Properties:
+      ParentId: !Ref RootOU
+      Name: SubOU3
